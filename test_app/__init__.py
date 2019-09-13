@@ -1,5 +1,5 @@
 import pytest
 
 @pytest.fixture
-def fixture(mocker):
+def test_app(mocker):
     pass
