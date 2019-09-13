@@ -34,7 +34,7 @@ def test_can_load_test_index(test_app):
     assert 'Hello, World!' in resp  # string must be present in body
 ```
 
-More examples in [__tests__](__tests__), but keep in mind that they use an additional fixture `mock_site` to use their test site as the site. To test file in the current working directory, just leave that out (as in the above example).
+More examples in [__tests__](https://github.com/mshafer1/webtest-flask-fixture/tree/master/webtest_flask_fixture/__tests__), but keep in mind that they use an additional fixture `mock_site` to use their test site as the site. To test file in the current working directory, just leave that out (as in the above example).
 
 
 # Future
