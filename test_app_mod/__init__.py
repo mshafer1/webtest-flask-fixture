@@ -7,12 +7,14 @@ _moduleLogger.addHandler(logging.NullHandler())
 
 _base_dir = os.path.dirname(os.path.realpath(__file__))
 
+
 def _get_cwd():
     path = os.getcwd()
     common_prefix = os.path.commonprefix([path, _base_dir])
     if not common_prefix:
         return '.'
     return os.path.relpath(path, _base_dir) or '.'
+
 
 def _flask_app():
     from flask import Flask, request, redirect, url_for, send_from_directory
@@ -40,8 +42,9 @@ def _flask_app():
             dest = os.path.join(*segments)
         _moduleLogger.debug('Joined: %s', dest)
         return app.send_static_file(dest)
-    
+
     return app
+
 
 @pytest.fixture
 def test_app():
