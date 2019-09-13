@@ -10,16 +10,16 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='webtest_flask_fixture',
-    version='0.1.0',
+    version='0.1.1',
     description='Provide a fixture of using Webtest with a local static site via Flask',
     long_description=long_description,  # Optional
-    long_description_content_type='text/markdown',
+    long_description_content_type="text/markdown",
 
     # This should be a valid link to your project's main homepage.
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/pypa/sampleproject',  # Optional
+    url='https://github.com/mshafer1/webtest-flask-fixture',  # Optional
     author='mshafer1',  # Optional
 
     # Classifiers help users find your project by categorizing it.
@@ -59,7 +59,8 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages(exclude=['contrib', 'docs', 'tests']),  # Required
+    packages=find_packages(exclude=['contrib', 'docs', '__tests__', '*.__tests__', '__tests.*', '*.__tests__.*']),  # Required
+    # py_modules=["webtest_flask_fixture"],
 
     # Specify which Python versions you support. In contrast to the
     # 'Programming Language' classifiers above, 'pip install' will check this
@@ -101,9 +102,9 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/pypa/sampleproject/issues',
-        'Funding': 'https://donate.pypi.org',
-        'Say Thanks!': 'http://saythanks.io/to/example',
-        'Source': 'https://github.com/pypa/sampleproject/',
+        'Bug Reports': 'https://github.com/mshafer1/webtest-flask-fixture/issues',
+        # 'Funding': 'https://donate.pypi.org',
+        # 'Say Thanks!': 'http://saythanks.io/to/example',
+        'Source': 'https://github.com/mshafer1/webtest-flask-fixture',
     },
 )
