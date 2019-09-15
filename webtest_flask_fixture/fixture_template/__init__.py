@@ -18,7 +18,7 @@ def _get_cwd():
     return os.path.relpath(path, _base_dir) or '.'
 
 
-class FlaskWrapper(object):
+class DefaultFlaskApp(object):
     def __init__(self, root_folder=None):
         self._app = Flask(__name__)
         self._app.debug = True
@@ -36,12 +36,18 @@ class FlaskWrapper(object):
             return self.handle_path(file)
 
     @property
-    def app(self):
+    def flask(self):
         return self._app
 
 
     def handle_path(self, path):
-        '''
+        '''Handle any path passed to the Flask app
+
+        Args:
+            path (str): The url short path to the desired file
+        
+        Returns:
+            Flask.send_static_file: Response
         '''
         # send_static_file will guess the correct MIME type
         # _moduleLogger.debug('Path: %s', path)

@@ -5,11 +5,8 @@ import pytest
 def test_app():
     from webtest import TestApp
 
-    class Wrapper(fixture_template.FlaskWrapper):
-        pass
+    wrapper = fixture_template.DefaultFlaskApp()
 
-    wrapper = Wrapper()
-
-    flask_app = wrapper.app
+    flask_app = wrapper.flask
     app = TestApp(flask_app)
     return app
