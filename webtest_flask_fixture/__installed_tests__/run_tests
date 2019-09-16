@@ -1,0 +1,6 @@
+pushd __installed_tests
+python -m venv _test_env
+_test_env/scripts/activate
+pip install -r ../../../requirements_test.txt
+pip install ../../../dist/webtest_flask_fixture-0.1.1.tar.gz
+python test_the_fixture.py
