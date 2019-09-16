@@ -14,7 +14,7 @@ install:
 
 # command to run tests
 script:
-  - python -m pytest --cov=.
+  - python -m pytest --cov=. --ignore=webtest_flask_fixture/__installed_tests_
   - source run_install_tests.sh
 
 after_success:
