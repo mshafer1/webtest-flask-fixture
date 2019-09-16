@@ -1,4 +1,4 @@
-pushd __installed_tests
+pushd __installed_tests_
 python -m venv _test_env
 _test_env/scripts/activate
 pip install -r ../../../requirements_test.txt
