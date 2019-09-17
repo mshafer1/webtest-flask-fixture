@@ -6,7 +6,7 @@ python -m venv _test_env
 
 echo install requirements
 
-_test_env/scripts/activate
+source _test_env/scripts/activate
 pip install -r ../../../requirements_test.txt
 
 echo install module
