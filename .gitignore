@@ -1,6 +1,7 @@
 .vscode/
 dist/
 htmlcov/
+build/
 
 .coverage
 
