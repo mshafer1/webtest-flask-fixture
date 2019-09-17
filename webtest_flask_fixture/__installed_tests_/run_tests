@@ -2,11 +2,11 @@ pushd __installed_tests_
 
 echo make venv
 
-python -m venv _test_env
+python3 -m venv _test_env
 
 echo install requirements
 find "$PWD"
-source _test_env/bin/activate
+source _test_env/scripts/activate
 pip install -r ../../../requirements_test.txt
 # 
 # echo install module
