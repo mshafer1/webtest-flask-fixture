@@ -8,10 +8,10 @@ echo install requirements
 find "$PWD"
 source _test_env/bin/activate
 python -m pip install -r ../../requirements_test.txt
-# 
-# echo install module
-# 
-# pip install ../../../dist/webtest_flask_fixture-0.1.1.tar.gz
-# 
-# echo run tests
+
+echo install module
+
+pip install ../../dist/webtest_flask_fixture-0.1.1.tar.gz
+
+echo run tests
 # python test_the_fixture.py
