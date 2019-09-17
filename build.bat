@@ -1,1 +1,1 @@
-call build_command
+cmd < build_command
