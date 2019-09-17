@@ -5,13 +5,13 @@ echo make venv
 python -m venv _test_env
 
 echo install requirements
-
-source _test_env/scripts/activate
-pip install -r ../../../requirements_test.txt
-
-echo install module
-
-pip install ../../../dist/webtest_flask_fixture-0.1.1.tar.gz
-
-echo run tests
-python test_the_fixture.py
+find "$PWD"
+# source _test_env/scripts/activate
+# pip install -r ../../../requirements_test.txt
+# 
+# echo install module
+# 
+# pip install ../../../dist/webtest_flask_fixture-0.1.1.tar.gz
+# 
+# echo run tests
+# python test_the_fixture.py
