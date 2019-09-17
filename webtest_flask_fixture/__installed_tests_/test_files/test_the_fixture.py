@@ -2,7 +2,7 @@ import pytest
 from webtest_flask_fixture import test_app
 
 
-def test_can_load_test_index(mock_site, test_app):
+def test_can_load_test_index(test_app):
     # Act
     resp = test_app.get('/')
 
@@ -12,7 +12,7 @@ def test_can_load_test_index(mock_site, test_app):
     assert 'Hello, World!' in resp  # string must be present in body
 
 
-def test_can_load_test_js_file(mock_site, test_app):
+def test_can_load_test_js_file(test_app):
     # Act
     resp = test_app.get('/scripts/script.js')
 
@@ -22,7 +22,7 @@ def test_can_load_test_js_file(mock_site, test_app):
     assert 'console.log(' in resp  # string must be present in body
 
 
-def test_can_press_test_button(mock_site, test_app):
+def test_can_press_test_button(test_app):
     # Arrange
     resp = test_app.get('/')
 
