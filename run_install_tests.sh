@@ -3,8 +3,8 @@ echo Building . . .
 source build_command
 echo Finished Building.
 
-echo.
-echo.
+echo ""
+echo "" 
 
 
 pushd webtest_flask_fixture
