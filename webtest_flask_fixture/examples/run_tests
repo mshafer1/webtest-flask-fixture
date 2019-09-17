@@ -1,14 +1,13 @@
 #!/bin/bash
-pushd __installed_tests_
+pushd examples
 
 echo make venv
 
 python3 -m venv _test_env
 
 echo install requirements
-find "$PWD"
-# source _test_env/bin/activate
- _test_env/bin/python -m pip install -r ../../requirements_test.txt
+
+_test_env/bin/python -m pip install -r ../../requirements_test.txt
 
 echo install module
 
@@ -17,6 +16,4 @@ echo install module
 echo run tests
 pushd test_files
 
-../_test_env/bin/python test_the_fixture.py
-
-# deactivate
+../_test_env/bin/python example_tests.py
