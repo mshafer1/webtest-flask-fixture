@@ -11,7 +11,7 @@ _test_env/bin/python -m pip install -r ../../requirements_test.txt
 
 echo install module
 
- _test_env/bin/python -m pip install ../../dist/webtest_flask_fixture-0.5.0.tar.gz
+ _test_env/bin/python -m pip install ../../dist/webtest_flask_fixture-0.5.1.tar.gz
 
 echo run tests
 pushd test_files

@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='webtest_flask_fixture',
-    version='0.5.0',
+    version='0.5.1',
     description='Provide a pytest fixture of a Webtest app with a local static site via Flask',
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",
