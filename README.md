@@ -17,7 +17,7 @@ And this package is born. The objective is to provide a `PyTest.fixture` that al
 
 or, from source:
 
-`pip install git+git://github.com/mshafer1/webtest-flask-fixture.git@0.5.0`
+`pip install git+git://github.com/mshafer1/webtest-flask-fixture.git@0.5.1`
 
 
 # Useage
