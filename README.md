@@ -39,7 +39,7 @@ def test_can_load_test_index(test_app):
     assert 'Hello, World!' in resp  # string must be present in body
 ```
 
-More examples in [examples](webtest_flask_fixture/examples).
+More examples in [examples](webtest_flask_fixture/examples/test_files).
 
 # Future
 Currently WebTest does not execute JS in place, we would like to also integrate selenium such that a user can apply our PyTest fixture and get a full experience.
