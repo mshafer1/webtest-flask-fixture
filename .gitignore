@@ -1,0 +1,9 @@
+.vscode/
+dist/
+htmlcov/
+build/
+
+.coverage
+
+*.bat
+*.egg-info
