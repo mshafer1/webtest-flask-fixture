@@ -1,3 +1,9 @@
+Master: [![Build Status](https://travis-ci.org/mshafer1/webtest-flask-fixture.svg?branch=master)](https://travis-ci.org/mshafer1/webtest-flask-fixture)
+[![Coverage Status](https://coveralls.io/repos/github/mshafer1/webtest-flask-fixture/badge.svg?branch=master)](https://coveralls.io/github/mshafer1/webtest-flask-fixture?branch=master)
+
+Release: [![Build Status](https://travis-ci.org/mshafer1/webtest-flask-fixture.svg?branch=release)](https://travis-ci.org/mshafer1/webtest-flask-fixture)
+[![Coverage Status](https://coveralls.io/repos/github/mshafer1/webtest-flask-fixture/badge.svg?branch=release)](https://coveralls.io/github/mshafer1/webtest-flask-fixture?branch=release)
+
 # webtest-flask-fixture
 Providing a fixture for static websites to use WebTest through Flask
 
