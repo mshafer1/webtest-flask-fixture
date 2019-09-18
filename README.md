@@ -15,6 +15,11 @@ And this package is born. The objective is to provide a `PyTest.fixture` that al
 
 `pip install webtest-flask-fixture`
 
+or, from source:
+
+`pip install git+git://github.com/mshafer1/webtest-flask-fixture.git@0.5.0`
+
+
 # Useage
 
 Start writing a PyTest test, and use `webtest_flask_fixture.test_app` to load pages.
@@ -34,7 +39,7 @@ def test_can_load_test_index(test_app):
     assert 'Hello, World!' in resp  # string must be present in body
 ```
 
-More examples in [examples](https://github.com/mshafer1/webtest-flask-fixture/tree/master/webtest_flask_fixture/examples).
+More examples in [examples](webtest_flask_fixture/examples).
 
 # Future
 Currently WebTest does not execute JS in place, we would like to also integrate selenium such that a user can apply our PyTest fixture and get a full experience.
